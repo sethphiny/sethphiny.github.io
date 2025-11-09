@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OG Preview - Phinehas Seth</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 1200px;
+        height: 630px;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.55), transparent 45%),
+          radial-gradient(circle at bottom left, rgba(20, 184, 166, 0.5), transparent 50%), #0f172a;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        color: #e2e8f0;
+        padding: 64px;
+      }
+      .card {
+        flex: 1;
+        border-radius: 40px;
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        box-shadow: 0 40px 90px rgba(15, 23, 42, 0.6);
+        padding: 72px;
+        display: grid;
+        gap: 32px;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.55em;
+        font-size: 20px;
+        color: rgba(148, 163, 184, 0.8);
+      }
+      h1 {
+        font-size: 72px;
+        line-height: 1.05;
+        color: #f8fafc;
+      }
+      .summary {
+        font-size: 30px;
+        line-height: 1.5;
+        color: rgba(226, 232, 240, 0.85);
+        max-width: 900px;
+      }
+      .projects {
+        display: flex;
+        gap: 28px;
+      }
+      .project {
+        flex: 1;
+        border-radius: 28px;
+        background: rgba(30, 41, 59, 0.75);
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        padding: 28px;
+        display: grid;
+        gap: 16px;
+      }
+      .project strong {
+        font-size: 26px;
+        color: #60a5fa;
+      }
+      .project p {
+        font-size: 22px;
+        line-height: 1.45;
+        color: rgba(226, 232, 240, 0.8);
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        color: rgba(148, 163, 184, 0.9);
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(59, 130, 246, 0.25);
+        color: #93c5fd;
+        border-radius: 999px;
+        padding: 10px 24px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="eyebrow">Backend Engineer</div>
+      <h1>Phinehas Seth</h1>
+      <p class="summary">
+        I build secure, scalable APIs and financial platforms with Node.js, TypeScript, and cloud native
+        tooling—helping teams ship reliable systems that handle real-world volume.
+      </p>
+      <div class="projects">
+        <div class="project">
+          <strong>Conglex Platform</strong>
+          <p>Crypto payments infrastructure on NestJS, PostgreSQL, Redis, and AWS ECS for high-volume transfers.</p>
+        </div>
+        <div class="project">
+          <strong>Rentease</strong>
+          <p>Installment-based rentals with managed listings, KYC, and payments backed by a scalable NestJS stack.</p>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="badge">Node.js · TypeScript · NestJS</span>
+        <span>phinehasseth@ymail.com · sethphiny.github.io</span>
+      </div>
+    </div>
+  </body>
+</html>
+
