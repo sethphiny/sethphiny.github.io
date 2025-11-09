@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Phinehas Seth — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio built with React, TypeScript, and Vite. Showcases backend projects and experience focused on building scalable APIs, financial platforms, and resilient infrastructure.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+pnpm install
+pnpm dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Available Scripts
+
+- `pnpm dev` – start the development server with hot reloading
+- `pnpm build` – create a production build
+- `pnpm preview` – preview the production build locally
+- `pnpm lint` – run ESLint with the configured rules
+
+## Key Libraries
+
+- React + TypeScript
+- Vite
+- yet-another-react-lightbox (project gallery)
+
+## Project Structure
+
+- `src/App.tsx` – main application layout and content
+- `src/assets/` – project imagery and documents
+- `src/App.css` & `src/index.css` – styling
+
+## Deployment
+
+Build the site and serve the output from the `dist/` directory using any static host (e.g. GitHub Pages, Netlify, Vercel).
