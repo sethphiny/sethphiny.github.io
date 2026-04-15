@@ -33,13 +33,13 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body suppressHydrationWarning className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-primary-foreground`}>
         <ThemeProvider>
-          <div className="relative min-h-screen flex flex-col overflow-x-hidden">
+          <div suppressHydrationWarning className="relative min-h-screen flex flex-col overflow-x-hidden">
             {/* Ambient Background */}
             <div className="fixed inset-0 z-[-1] opacity-50 pointer-events-none bg-mesh" />
             <div className="fixed inset-0 z-[-1] opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] blend-overlay" />
             
             <Navbar />
-            <main className="flex-grow pt-24">
+            <main suppressHydrationWarning className="flex-grow pt-24">
               {children}
             </main>
             

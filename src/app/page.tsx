@@ -17,38 +17,38 @@ import { useState } from "react";
 
 const EXPERTISE = [
   {
-    title: "Backend Engineering",
-    description: "I build the core logic of web apps, making sure everything is fast and works exactly as it should.",
-    icon: Server,
-    color: "var(--indigo-accent)",
-    skills: ["Node.js", "TypeScript", "Redis", "PostgreSQL"]
-  },
-  {
-    title: "Databases & Scaling",
-    description: "I enjoy taking apart messy data problems and making them clean, efficient, and ready to scale.",
+    title: "Enterprise Solutions",
+    description: "I build robust backend systems for ERP and CRM platforms that help businesses operate with precision and efficiency.",
     icon: Database,
     color: "var(--cyan-accent)",
-    skills: ["SQL", "MongoDB", "Query Optimization", "Caching"]
+    skills: ["ERP Systems", "CRM", "Enterprise Architecture", "Node.js"]
   },
   {
-    title: "Systems & Reliability",
-    description: "I help set up the infrastructure that keeps apps running smoothly 24/7 without issues.",
-    icon: ShieldCheck,
+    title: "AI & Automation",
+    description: "I integrate intelligent solutions like ChainBOTs to automate workflows and enhance customer engagement at scale.",
+    icon: Cpu,
+    color: "var(--indigo-accent)",
+    skills: ["Chatbots", "Process Automation", "Go", "Redis"]
+  },
+  {
+    title: "Advanced Analytics",
+    description: "I architect data pipelines that transform complex aggregation into actionable insights and ROI for African businesses.",
+    icon: Workflow,
     color: "var(--violet-accent)",
-    skills: ["AWS", "Docker", "CI/CD", "Testing"]
+    skills: ["Data Science", "PostgreSQL", "Query Optimization", "Reporting"]
   }
 ];
 
 const PROJECTS = [
   {
-    title: "High-Traffic Trading Engine",
+    title: "Enterprise ERP Ecosystem",
     role: "Backend Lead",
-    description: "I built the core liquidity and execution logic for a high-frequency trading platform, focusing on speed and accuracy.",
-    metrics: ["99.9% Uptime", "<50ms Execution"],
+    description: "Architected a highly modular ERP system for enterprise-scale operations, optimizing data aggregation and business logic for high efficiency.",
+    metrics: ["100k+ Transactions/hr", "<30ms Response"],
     image: "/images/trading_engine.png",
-    architecture: "graph TD\n  Client[App] --> API[Node.js API]\n  API --> Cache[Redis]\n  API --> DB[PostgreSQL]\n  API --> Service[Matching Engine]",
-    tech: ["Node.js", "TypeScript", "Redis", "AWS"],
-    link: "https://github.com/sethphiny"
+    architecture: "graph TD\n  Client[App] --> API[Node.js API]\n  API --> Logic[Business Logic Engine]\n  Logic --> DB[PostgreSQL]\n  Logic --> Cache[Redis]",
+    tech: ["Node.js", "TypeScript", "Redis", "PostgreSQL"],
+    link: "https://chainconsults.com/erp.php"
   },
   {
     title: "Socket-Based Realtime Chat",
@@ -77,11 +77,11 @@ const EXPERIENCE = [
     company: "Chainconsults",
     role: "Backend Lead",
     period: "2023 - Present",
-    description: "I manage the backend for high-frequency trading tools. My main focus is making sure our systems are fast, accurate, and can handle a lot of traffic without breaking.",
+    description: "Architecting core infrastructure for Africa's leading digital technology solutions provider. I focus on building customer-focused products that maximize ROI and drive business efficiency.",
     achievements: [
-      "I helped speed up our core engine by 45% using Redis",
-      "I managed a smooth migration of over 10TB of live data",
-      "I mentor a group of 5 engineers on building secure and clean systems"
+      "Led the backend development for 'ChainBOTs' and 'ChainRecruits' platforms",
+      "Optimized enterprise ERP engines for seamless data research and advanced analytics",
+      "Mentored a team of 5 result-driven engineers to build agile, cost-effective digital solutions"
     ]
   },
   {
@@ -123,6 +123,7 @@ export default function Home() {
       <section id="hero" className="relative min-h-[80vh] flex flex-col items-center justify-center px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div 
+            suppressHydrationWarning
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}

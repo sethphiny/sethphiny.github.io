@@ -38,6 +38,7 @@ export default function Navbar() {
       )}>
         {/* Logo */}
         <motion.a 
+          suppressHydrationWarning
           href="#hero"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -51,6 +52,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item, i) => (
             <motion.a
+              suppressHydrationWarning
               key={item.name}
               href={item.href}
               initial={{ opacity: 0, y: -10 }}
@@ -73,13 +75,13 @@ export default function Navbar() {
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
-            <a href="https://github.com/sethphiny" target="_blank" className="p-2 glass rounded-full hover:bg-white/10 transition-all">
+            <a href="https://github.com/sethphiny" suppressHydrationWarning target="_blank" className="p-2 glass rounded-full hover:bg-white/10 transition-all">
               <FaGithub size={16} />
             </a>
-            <a href="https://linkedin.com/in/sethphiny" target="_blank" className="p-2 glass rounded-full hover:bg-white/10 transition-all">
+            <a href="https://linkedin.com/in/sethphiny" suppressHydrationWarning target="_blank" className="p-2 glass rounded-full hover:bg-white/10 transition-all">
               <FaLinkedin size={16} />
             </a>
-            <a href="mailto:seth@example.com" className="p-2 glass rounded-full text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+            <a href="mailto:seth@example.com" suppressHydrationWarning className="p-2 glass rounded-full text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               <Mail size={16} />
             </a>
           </div>
@@ -105,6 +107,7 @@ export default function Navbar() {
           >
             {NAV_ITEMS.map((item) => (
               <a 
+                suppressHydrationWarning
                 key={item.name} 
                 href={item.href} 
                 className="text-lg font-medium"
