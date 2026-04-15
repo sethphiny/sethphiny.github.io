@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Linkedin, Mail, Sun, Moon } from "lucide-react";
+import { Menu, X, Mail, Sun, Moon } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import { useTheme } from "./theme-provider";
 
@@ -72,11 +73,11 @@ export default function Navbar() {
             >
               {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
-            <a href="https://github.com/sethphiny" target="_blank" className="p-2 text-muted-foreground hover:text-primary transition-colors">
-              <Github size={18} />
+            <a href="https://github.com/sethphiny" target="_blank" className="p-2 glass rounded-full hover:bg-white/10 transition-all">
+              <FaGithub size={16} />
             </a>
-            <a href="https://linkedin.com/in/sethphiny" target="_blank" className="p-2 text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin size={18} />
+            <a href="https://linkedin.com/in/sethphiny" target="_blank" className="p-2 glass rounded-full hover:bg-white/10 transition-all">
+              <FaLinkedin size={16} />
             </a>
             <a href="mailto:seth@example.com" className="p-2 glass rounded-full text-primary hover:bg-primary hover:text-primary-foreground transition-all">
               <Mail size={16} />
@@ -114,8 +115,8 @@ export default function Navbar() {
             ))}
             <div className="h-px w-full bg-white/10" />
             <div className="flex gap-6 justify-center">
-              <Github size={24} />
-              <Linkedin size={24} />
+              <FaGithub size={24} />
+              <FaLinkedin size={24} />
               <Mail size={24} />
             </div>
           </motion.div>
